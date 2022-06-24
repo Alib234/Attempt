@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://haxorville-64.tres" type="DynamicFont" id=1]
+[ext_resource path="res://BG.png" type="Texture" id=2]
+[ext_resource path="res://button_normal.tres" type="StyleBox" id=3]
+[ext_resource path="res://button_pressed.tres" type="StyleBox" id=4]
+[ext_resource path="res://button_hover.tres" type="StyleBox" id=5]
+[ext_resource path="res://Controls.gd" type="Script" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BG" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -740.0
+margin_top = 56.0
+margin_right = 740.0
+margin_bottom = 803.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = ExtResource( 1 )
+text = "Press Left / A to go left
+
+
+Press Right / D to go right
+
+
+Press Up / W to jump
+
+
+Press Up / W in the air to jump again"
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -256.0
+margin_top = -176.0
+margin_right = 256.0
+margin_bottom = -48.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/normal = ExtResource( 3 )
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

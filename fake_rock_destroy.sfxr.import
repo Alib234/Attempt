@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamSample"
+path="res://.import/fake_rock_destroy.sfxr-b9ba77acec2ff5c50af5b7b6081730e4.sample"
+
+[deps]
+
+source_file="res://fake_rock_destroy.sfxr"
+dest_files=[ "res://.import/fake_rock_destroy.sfxr-b9ba77acec2ff5c50af5b7b6081730e4.sample" ]
+
+[params]
+
+loop=false

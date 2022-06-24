@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Attempt_menu.gd" type="Script" id=1]
+[ext_resource path="res://haxorville-title.tres" type="DynamicFont" id=2]
+[ext_resource path="res://BG.png" type="Texture" id=3]
+[ext_resource path="res://button_hover.tres" type="StyleBox" id=4]
+[ext_resource path="res://haxorville-64.tres" type="DynamicFont" id=5]
+[ext_resource path="res://button_normal.tres" type="StyleBox" id=6]
+[ext_resource path="res://button_pressed.tres" type="StyleBox" id=7]
+[ext_resource path="res://haxorville-16.tres" type="DynamicFont" id=8]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_clip_content = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BTN_START_GAME" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -256.0
+margin_top = 256.0
+margin_right = 256.0
+margin_bottom = 384.0
+focus_mode = 0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+text = "Start Game"
+
+[node name="BTN_QUIT_GAME" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -256.0
+margin_top = 688.0
+margin_right = 256.0
+margin_bottom = 816.0
+focus_mode = 0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+text = "Quit"
+
+[node name="BTN_CONTROLS" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -256.0
+margin_top = 472.0
+margin_right = 256.0
+margin_bottom = 600.0
+focus_mode = 0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+text = "Controls"
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -280.0
+margin_top = 40.0
+margin_right = 280.0
+margin_bottom = 185.0
+custom_colors/font_color = Color( 0.129412, 0.592157, 0.0627451, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 8
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = ExtResource( 2 )
+text = "Attempt"
+
+[node name="Ver" type="Label" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 182.0
+margin_bottom = 72.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = ExtResource( 8 )
+text = "Build number:
+Version:"
+
+[node name="OS_VER" type="Label" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 32.0
+margin_top = -60.0
+margin_right = 114.0
+margin_bottom = -46.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = ExtResource( 8 )
+text = "OS:"
+
+[node name="BG" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+z_index = -1
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="BTN_START_GAME" to="." method="_on_BTN_START_GAME_pressed"]
+[connection signal="pressed" from="BTN_QUIT_GAME" to="." method="_on_BTN_QUIT_GAME_pressed"]
+[connection signal="pressed" from="BTN_CONTROLS" to="." method="_on_BTN_CONTROLS_pressed"]

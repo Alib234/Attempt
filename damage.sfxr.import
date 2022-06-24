@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamSample"
+path="res://.import/damage.sfxr-3355bfa796e2b106615d4383d568f315.sample"
+
+[deps]
+
+source_file="res://damage.sfxr"
+dest_files=[ "res://.import/damage.sfxr-3355bfa796e2b106615d4383d568f315.sample" ]
+
+[params]
+
+loop=false

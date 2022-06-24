@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://BG.png" type="Texture" id=1]
+[ext_resource path="res://haxorville-32.tres" type="DynamicFont" id=2]
+[ext_resource path="res://haxorville-64.tres" type="DynamicFont" id=3]
+[ext_resource path="res://button_pressed.tres" type="StyleBox" id=4]
+[ext_resource path="res://button_hover.tres" type="StyleBox" id=5]
+[ext_resource path="res://button_normal.tres" type="StyleBox" id=6]
+[ext_resource path="res://Ending.gd" type="Script" id=7]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BG" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -950.0
+margin_top = -253.0
+margin_right = 950.0
+margin_bottom = 173.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_constants/shadow_as_outline = 0
+custom_fonts/font = ExtResource( 2 )
+text = "You enter the vessel and fly back to the mothership.
+
+You're immediately sent back to the charging station.
+
+The people are immediately speculating how much the artifact could cost.
+
+Suddenly something hits the ship, it's the creatures that are attracted to the artifact.
+
+They start destroying the hull of the ship and get inside, killing everyone on board.
+
+You are still in the charging station, stuck in hybernation mode."
+
+[node name="BTN_QUIT_GAME" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 56.0
+margin_top = -184.0
+margin_right = 568.0
+margin_bottom = -56.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 3 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/normal = ExtResource( 6 )
+text = "Quit"
+
+[node name="BTN_MENU" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -568.0
+margin_top = -184.0
+margin_right = -56.0
+margin_bottom = -56.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 3 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/normal = ExtResource( 6 )
+text = "Menu"
+
+[connection signal="pressed" from="BTN_QUIT_GAME" to="." method="_on_BTN_QUIT_GAME_pressed"]
+[connection signal="pressed" from="BTN_MENU" to="." method="_on_BTN_MENU_pressed"]

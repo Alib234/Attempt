@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/2_Square_hi.ogg-2e922024e6dee5094b562b86d131f778.oggstr"
+
+[deps]
+
+source_file="res://2_Square_hi.ogg"
+dest_files=[ "res://.import/2_Square_hi.ogg-2e922024e6dee5094b562b86d131f778.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

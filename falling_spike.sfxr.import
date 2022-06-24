@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamSample"
+path="res://.import/falling_spike.sfxr-92dedcad99f405880459b84ce2cbf0dd.sample"
+
+[deps]
+
+source_file="res://falling_spike.sfxr"
+dest_files=[ "res://.import/falling_spike.sfxr-92dedcad99f405880459b84ce2cbf0dd.sample" ]
+
+[params]
+
+loop=false

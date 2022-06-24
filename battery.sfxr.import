@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamSample"
+path="res://.import/battery.sfxr-a8373b0f37f0c91462c4bdf9a0ac841b.sample"
+
+[deps]
+
+source_file="res://battery.sfxr"
+dest_files=[ "res://.import/battery.sfxr-a8373b0f37f0c91462c4bdf9a0ac841b.sample" ]
+
+[params]
+
+loop=false

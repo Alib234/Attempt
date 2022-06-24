@@ -1,0 +1,14 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamSample"
+path="res://.import/jump.sfxr-fb4983f2554ab4033bcd3deb7695a8e7.sample"
+
+[deps]
+
+source_file="res://jump.sfxr"
+dest_files=[ "res://.import/jump.sfxr-fb4983f2554ab4033bcd3deb7695a8e7.sample" ]
+
+[params]
+
+loop=false
